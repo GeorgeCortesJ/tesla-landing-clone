@@ -1,21 +1,21 @@
 ---
 import LeadingHeader from "../components/LeadingHeader.astro";
 import HeroSection from "../components/HeroSection.astro";
+import ModelY from "../components/ModelY.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Tesla clone">
 	<LeadingHeader />
 
-	<main class="snap-y snap-mandatory relative w-full h-full overflow-auto">
+	<main
+		class="snap-y snap-mandatory relative w-full h-full overflow-auto scroll-smooth"
+	>
 		<div class="snap-center">
 			<HeroSection />
 		</div>
 		<div class="snap-center">
-			<HeroSection />
-		</div>
-		<div class="snap-center">
-			<HeroSection />
+			<ModelY />
 		</div>
 	</main>
 </Layout>
